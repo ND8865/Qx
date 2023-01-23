@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="TestListners.MethodInterceptorListner"/>
+        <listener class-name="TestListners.DirectoryManagement"/>
+        <listener class-name="TestListners.ExtentReportListner"/>
+    </listeners>
+	
+	 
+    <test name="SPRINT 01"> 
+    <parameter name="browser" value="chrome"/>
+          <classes>
+          <class name="TestScripts_Sprint01.SignUp_Gamer_Tests"/>
+          <class name="TestScripts_Sprint01.SignInGamer_Test"/>
+          <class name="TestScripts_Sprint01.ChangePasswordOfAccount_Tests"/>
+          <class name="TestScripts_Sprint01.ForgotPassword_Gamers_Test"/>
+          <class name="TestScripts_Sprint01.Dashboard_Gamer_Tests"/>
+          <class name="TestScripts_Sprint01.Offers_Gamer_Tests"/>
+          <class name="TestScripts_Sprint01.LinkGames_Gamer_Tests"/>
+          </classes>
+    </test> 
+     
+    <test name="SPRINT 02"> 
+    <parameter name="browser" value="chrome"/>
+          <classes>
+            <class name="TestScripts_Sprint02.EditProfile_Gamer_test"/>
+            <class name="TestScripts_Sprint02.Redeem_Gamer_test"/>
+            <class name="TestScripts_Sprint02.MyRewards_Gamer_Tests"/>
+            <class name="TestScripts_Sprint02.Exchange_Gamer_Tests"/>
+          </classes>
+    </test> 
+    
+     <test name="SPRINT 03"> 
+    <parameter name="browser" value="chrome"/>
+          <classes>
+           <class name="TestScripts_Sprint03.EditAccount_Cashback_test"/> 
+           <class name="TestScripts_Sprint03.Redeem_Cashback_test"/>
+           <class name="TestScripts_Sprint03.Notifications_Gamer_Tests"/>
+           <class name="TestScripts_Sprint03.Premium_Gamer_Tests"/>
+           <class name="TestScripts_Sprint03.FAQsAndServerVersion_Gamer_Tests"/>  	
+          </classes>
+    </test> 
+    
+     <test name="SPRINT 04"> 
+    <parameter name="browser" value="chrome"/>
+          <classes>
+            <class name="TestScripts_Sprint04.SignIn_Partner_Test"/>   
+            <class name="TestScripts_Sprint04.SignIn_Admin_test"/>     	
+            <class name="TestScripts_Sprint04.SignUp_CreateAccount_Partner_Test"/>   
+            <class name="TestScripts_Sprint04.Forgot_Password_Admin_test"/>  
+            <class name="TestScripts_Sprint04.Forgot_Password_Partner_test"/>    
+            <class name="TestScripts_Sprint04.Admin_Users_Test"/>
+            <class name="TestScripts_Sprint04.AdminUsers_Admin_Tests"/>   
+          </classes>
+    </test> 
+    
+     <test name="SPRINT 05"> 
+    <parameter name="browser" value="chrome"/>
+          <classes>
+            <class name="TestScripts_Sprint05.Change_Password_Admin_Tests"/>
+            <class name="TestScripts_Sprint05.Change_Password_Partner_Tests"/>
+            <class name="TestScripts_Sprint05.Edit_Profile_Partner_Tests"/>
+            <class name="TestScripts_Sprint05.ApprovePartner_Admin_Tests"/>
+            <class name="TestScripts_Sprint05.PendingAndAmmendmentsSuggestedPartnerStatus_Admin_Tests"/>
+            <class name="TestScripts_Sprint05.Admin_Partners_Test"/> 
+            <class name="TestScripts_Sprint05.Admin_Partners_Enable_Disable_Test"/>   
+          <class name="TestScripts_Sprint05.Admin_Partners_Reject_test"/>
+          </classes> 
+    </test>
+    
+
+      <test name = "SPRINT 06">
+        <parameter name = "browser" value = "chrome"/>
+        <classes>
+         <class name="TestScripts_Sprint06.Partner_Games_Test"/>
+         <class name="TestScripts_Sprint06.Partner_Docusign_Test"/>
+            <class name="TestScripts_Sprint06.ChangeEmail_Admin_Tests"/>
+            <class name="TestScripts_Sprint06.ChangeEmail_Partner_Tests"/>
+            <class name="TestScripts_Sprint06.Onboarding_Partner_Tests"/>
+           
+        </classes>
+    </test> 
+    
+ 
+</suite>
